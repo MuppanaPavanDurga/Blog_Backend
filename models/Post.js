@@ -1,8 +1,4 @@
-import mongoose from "mongoose";
 
-mongoose.connect("mongodb://127.0.0.1:27017/Testing")
-  .then(() => console.log("MongoDB Server Connected"))
-  .catch((err) => console.log("MongoDB Connection Error:", err));
 
 const PostSchema = new mongoose.Schema({
   title: {
